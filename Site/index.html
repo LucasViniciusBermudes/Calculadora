@@ -13,24 +13,24 @@
 <body>
   <div class="container gradient">
     <div class="calculador dark">
-      <p class="texto">Calculadora</p><!--calculator dark-->
+      <p class="texto">Calculadora</p>
       <div class="muda-tema ativo"><!--botao que muda o tema -->
         <i class="toggler-icon"></i>
       </div>
-        <div class="tela-display"><!--display-screen-->
+        <div class="tela-display">
           <div id="display">
           </div>
         </div>
-          <div class="botoes"><!--buttons-->
-              <table> <!--Cria tabela-->
-                <tr><!--table row/linha da tabela-->
-                  <td><button class="operador-btn" onclick="clean()">C</button></td><!-- class= btn-operator id=clear-->
-                  <td><button class="operador-btn" onclick="insert('/')">&divide;</button></td><!--& para caracter especial-->
+          <div class="botoes">
+              <table> 
+                <tr>
+                  <td><button class="operador-btn" onclick="clean()">C</button></td>
+                  <td><button class="operador-btn" onclick="insert('/')">&divide;</button></td>
                   <td><button class="operador-btn" onclick="insert('*')">&times;</button></td>
                   <td><button class="operador-btn" onclick="back()">&laquo;</button></td>
                 </tr>
                 <tr>
-                  <td><button class="numero-btn" onclick="insert('7')">7</button></td><!-- class= btn-number id=7-->
+                  <td><button class="numero-btn" onclick="insert('7')">7</button></td>
                   <td><button class="numero-btn" onclick="insert('8')">8</button></td>
                   <td><button class="numero-btn" onclick="insert('9')">9</button></td>
                   <td><button class="operador-btn" onclick="insert('-')">-</button></td>
@@ -45,10 +45,9 @@
                   <td><button class="numero-btn" onclick="insert('1')">1</button></td>
                   <td><button class="numero-btn" onclick="insert('2')">2</button></td>
                   <td><button class="numero-btn" onclick="insert('3')">3</button></td>
-                  <td rowspan="2"><button class="igual-btn" id="igual" onclick="calcula()">=</button></td><!--class=btn-equal id=equal-->
+                  <td rowspan="2"><button class="igual-btn" id="igual" onclick="calcula()">=</button></td>
                 </tr>
                 <tr>
-                  <!--<td><button class="operador-btn" onclick="insert('(')">(</button></td>-->
                   <td colspan="2"><button class="numero-btn" onclick="insert('0')" id="zero">0</button></td>
                   <td><button class="operador-btn" onclick="insert('.')">.</button></td>
                 </tr>
