@@ -1,2 +1,2 @@
 # Calculadora
- Primeiro código versionado
+ Primeiro código versionado publicado no GitHub
