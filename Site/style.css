@@ -14,10 +14,40 @@ a {
     text-decoration: none;
     color: #fff;
 }
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    height: 100vw;
+    background-image: linear-gradient(to left, #2C2D34, #E94822, #F2910A, #EFD510);
+    background-size: 500% 100%;
+    animation: colors 5s linear infinite alternate;
+}
 
 body {
-    background-image: linear-gradient(to bottom right, rgba(79,51,176,1),rgba(210,53,165));
-    /*background-color: #116D6E;*/
+    /*background-image: linear-gradient(to bottom right, rgba(79,51,176,1),rgba(210,53,165));*/
+    background-color: #116D6E;
+}   
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.texto {
+    text-align: left;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
 }
 
 .container {
@@ -100,6 +130,10 @@ button:hover {
 
 button#igual {
     height: 130px;
+}
+
+button#zero {
+    width: 133px;
 }
 
 /*light theme*/

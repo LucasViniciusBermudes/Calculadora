@@ -1,25 +1,3 @@
-const display = document.querySelector('#display');
-const botoes = document.querySelectorAll('button');
-const operadores = document.querySelector('button#operador-btn');
-
-botoes.forEach((item) => {
-    item.onclick = () => {
-        if(item.id == 'limpa') {
-            display.innerText = '';
-        } else if (item.id == 'backspace') {
-            let string = display.innerText.toString();
-            display.innerText = string.substr(0, string.length - 1);
-        } else if (display.innerText != '' && item.id == 'igual') {
-            display.innerText = eval(display.innerText);   
-        } else if (display.innerText != '' && item.id == 'igual') {
-            display.innerText = 'Vazio!';
-            setTimeout(() => (display.innerText = ''), 2000);
-        } else {
-            display.innerText += item.id;
-        }
-    }
-})
-
 const BtnMudaTema = document.querySelector('.muda-tema');
 const calculador = document.querySelector('.calculador');
 const mudaIcone = document.querySelector('.toggler-icon');
@@ -30,3 +8,25 @@ BtnMudaTema.onclick = () => {
     eDark = !eDark;
 }
 
+const display = document.querySelector('#display');
+
+function insert(num) {
+    let numero = document.getElementById('display').innerText;
+    document.getElementById('display').innerText = numero + num;
+}
+
+function clean() {
+    document.getElementById('display').innerText = " ";
+}
+
+function back() {
+    let resultado = document.getElementById('display').innerText;
+    document.getElementById('display').innerText = resultado.substring(0, resultado.length-1);
+}
+
+function calcula() {
+    let resultado = document.getElementById('display').innerText;
+    if (resultado) {
+        document.getElementById('display').innerHTML = eval(resultado);
+    }
+}
