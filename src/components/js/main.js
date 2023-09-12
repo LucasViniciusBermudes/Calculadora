@@ -1,8 +1,10 @@
 const BtnMudaTema = document.querySelector('.muda-tema');
 const calculador = document.querySelector('.calculador');
 const mudaIcone = document.querySelector('.toggler-icon');
+const texto = document.querySelector('.texto');
 let eDark = true;
 BtnMudaTema.onclick = () => {
+    texto.classList.toggle('dark');
     calculador.classList.toggle('dark');
     BtnMudaTema.classList.toggle('ativo');
     eDark = !eDark;

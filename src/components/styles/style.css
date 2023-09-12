@@ -19,8 +19,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    height: 100vw;
-    background-image: linear-gradient(to left, #2C2D34, #E94822, #F2910A, #EFD510);
+    background-image: linear-gradient(to left, #4b6cb7, #182848);
     background-size: 500% 100%;
     animation: colors 5s linear infinite alternate;
 }
@@ -46,7 +45,7 @@ body {
     text-align: left;
     font-family: 'Pangolin', cursive;
     font-size: 20px;
-    color: white;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -137,6 +136,9 @@ button#zero {
 }
 
 /*light theme*/
+.texto {
+    color: black;
+}
 
 .calculador {
     background-color: #fff;
@@ -170,6 +172,10 @@ button#zero {
 
 .calculador.dark {
     background-color: #071115;
+}
+
+.texto.dark {
+    color: white;
 }
 
 .calculador.dark #display {
